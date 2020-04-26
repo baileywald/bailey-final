@@ -1,18 +1,20 @@
 {% extends '_layouts/base.njk' %}
-
+{% block page_title %}{{ members.name }}{% endblock %}
 {% block content %}
 <article class="container">
   <div class="row">
-    <div class="col-sm-4">
-      {% block info %}
-        <img src="https://placekitten.com/420/320" alt="" class="img-fluid">
-      {% endblock %}
+    <div class="col-sm-4 order-sm-2 mb-4">
+      <div>
+        <img src="img/members/{{ members.image }}" alt=" {{ members.name }}" class="img-fluid">
+      </div>
     </div>
-    <div class="col-sm-8">
-      {% block story %}
-        <h1>Entry headline goes here</h1>
-        <p>Entry text goes here</p>
-      {% endblock %}
+    <div class="col-sm-8 order-sm-1">
+      <h2>{{members.name }}</h2>
+      <h5>Born: <span>{{ members.birthdate }}</span></h5>
+      <h5>Birthplace: <span>{{ members.birthplace }}</span></h5>
+      <h5>Instruments: <span>{{ members.instruments }}</span></h5>
+      <h5>Tenure: <span>{{ members.tenure }}</span></h5>
+      {{ members.text | safe}}
     </div>
   </div>
 </article>
