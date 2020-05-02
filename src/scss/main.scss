@@ -1,8 +1,30 @@
 // Custom variable overrides
 // See node_modules/bootstrap/scss/_variables.scss
 
-// $body-bg: black;
-// $body-color: white;
+$body-bg: rgb(116, 116, 116);
+$body-color: white;
+
+.container {
+
+  h2 {
+    color: gold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+  }
+}
+
+.table {
+
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 4px;
+  
+  td {
+    padding: 5px;
+  }
+  
+}
+
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
 
