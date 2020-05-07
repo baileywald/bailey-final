@@ -5,24 +5,26 @@ $body-bg: rgb(116, 116, 116);
 $body-color: white;
 
 .container {
-
   h2 {
     color: gold;
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
   }
+  a {
+    color: white;
+  }
 }
 
-.table {
-
-  text-align: center;
-  border-collapse: separate;
-  border-spacing: 4px;
-  
-  td {
-    padding: 5px;
+.col {
+  img {
+    margin-bottom: 15px;
   }
-  
+}
+
+.card-body {
+  h2 {
+    color: black;
+  }
 }
 
 // $link-hover-color: grey;
@@ -44,3 +46,5 @@ $body-color: white;
 @import "nav";
 
 @import "jumbotron"; 
+
+@import "discography";

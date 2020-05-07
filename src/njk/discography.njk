@@ -1,0 +1,29 @@
+{% extends '_layouts/base.njk' %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>2020 TOUR DATES</h3> 
+        <div class="table">
+          <table class="table table-bordered table-condensed">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">City</th>
+                <th scope="col">Venue</th>
+              </tr>
+            </thead>
+            {% for tourdates in tour.tourdates %}
+              <tr> 
+                <td> {{ tourdates.date }} </td>
+                <td> {{ tourdates.city }} </td>
+                <td> {{ tourdates.venue }} </td> 
+              </tr>
+          {% endfor %}
+          </table>
+        </div>
+     </div>   
+  </div>
+</div>
+
+{% endblock %}

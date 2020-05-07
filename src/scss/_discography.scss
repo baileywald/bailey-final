@@ -1,0 +1,29 @@
+h3 {
+  color: gold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  
+}
+
+.table {
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 4px;
+  border-width: 3px;
+  margin-bottom: 9px;
+  tr:hover {
+    background-color:rgb(37, 37, 37);
+  }
+  td {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid white;
+    border-width: 3px;
+  }
+  th {
+    font-size: 20px;
+    border: 1px solid white;
+    border-width: 3px;
+  }
+}
+
